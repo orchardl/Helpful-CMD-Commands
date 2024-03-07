@@ -48,7 +48,7 @@ for /r %x in (registry.pol) do ren "%x" registry.pol.bak
 gpupdate /force
 
 # Re-Connect FortiEMS after disconnection
-C:\"Program Files"\Fortinet\FortiClient\FortiESNAC.exe -r fortiems.aapc.com
+C:\"Program Files"\Fortinet\FortiClient\FortiESNAC.exe -r ems.yourdomain.com
 
 # DCU one-liner with forced restart
 "C:\Program Files\Dell\CommandUpdate\dcu-cli.exe" /applyUpdates -reboot=enable & "C:\Program Files (x86)\Dell\CommandUpdate\dcu-cli.exe" /applyUpdates -reboot=enable & shutdown /r -t 600
